@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../components/Header';
+import Article from '../components/Article';
 import Footer from '../components/Footer';
 
 const Home = () => {
@@ -14,9 +15,7 @@ const Home = () => {
     <div style={myStyle}>
       <div>
         <Header />
-        <article>
-          I am an article!
-        </article>
+        <Article />
       </div>
       <Footer />
     </div>
