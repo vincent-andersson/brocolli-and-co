@@ -29,3 +29,73 @@ export const ArticleButton = styled.button`
   height: 3.5em;
   border-width: thin;
 `;
+
+export const Modal = styled.div`
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+`;
+
+export const ModalOverlay = styled.div`
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  background: rgba(49,49,49,0.8);
+`;
+
+export const ModalBody = styled.div`
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+  background: #f1f1f1;
+  padding: 2.5em 0.8em;
+  border-radius: 3px;
+  max-width: 600px;
+  min-width: 30px;
+`;
+
+export const ModalHeader = styled.h2`
+  font-size: 16px;
+  font-style: italic;
+`;
+
+export const Separator = styled.div`
+  min-width: 2em;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  border-top: 1px solid black;
+`;
+
+export const FormContainer = styled.div`
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+export const FormGroup = styled.div`
+  padding-top: 0.5em;
+`;
+
+export const FormInput = styled.input`
+  min-width: 24em;
+  min-height: 2em;
+`;
+
+export const FormButton = styled.button`
+  background-color: #fff;
+  margin-top: 1.2rem;
+  min-width: 24em;
+  min-height: 2.5em;
+  border-width: thin;
+`;
