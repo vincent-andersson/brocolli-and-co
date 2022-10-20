@@ -61,7 +61,7 @@ export const ModalBody = styled.div`
   padding: 2.5em 0.8em;
   border-radius: 3px;
   max-width: 600px;
-  min-width: 30px;
+  min-width: 300px;
 `;
 
 export const ModalHeader = styled.h2`
@@ -76,7 +76,7 @@ export const Separator = styled.div`
   border-top: 1px solid black;
 `;
 
-export const FormContainer = styled.div`
+export const FormContainer = styled.form`
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -90,6 +90,14 @@ export const FormGroup = styled.div`
 export const FormInput = styled.input`
   min-width: 24em;
   min-height: 2em;
+  padding: 5px;
+`;
+
+export const FormError = styled.p`
+  font-size: 12px;
+  color: red;
+  padding: 5px 0 0 2px;
+  max-width: 300px;
 `;
 
 export const FormButton = styled.button`
@@ -98,4 +106,13 @@ export const FormButton = styled.button`
   min-width: 24em;
   min-height: 2.5em;
   border-width: thin;
+`;
+
+export const FormButtonSending = styled.button`
+  background-color: #f1f1f1;
+  margin-top: 1.2rem;
+  min-width: 24em;
+  min-height: 2.5em;
+  border-width: thin;
+  border-color: #cecfd0;
 `;
