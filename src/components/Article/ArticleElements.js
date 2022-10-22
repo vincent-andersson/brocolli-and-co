@@ -28,6 +28,7 @@ export const ArticleButton = styled.button`
   width: 12em;
   height: 3.5em;
   border-width: thin;
+  cursor: pointer;
 `;
 
 export const Modal = styled.div`
@@ -59,6 +60,7 @@ export const ModalBody = styled.div`
   line-height: 1.4;
   background: #f1f1f1;
   padding: 2.5em 0.8em;
+  border: 0.5px solid black;
   border-radius: 3px;
   max-width: 600px;
   min-width: 300px;
@@ -71,8 +73,8 @@ export const ModalHeader = styled.h2`
 
 export const Separator = styled.div`
   min-width: 2em;
-  margin-top: 0.5em;
-  margin-bottom: 1em;
+  margin-top: 0.8em;
+  margin-bottom: 2em;
   border-top: 1px solid black;
 `;
 
@@ -106,6 +108,7 @@ export const FormButton = styled.button`
   min-width: 24em;
   min-height: 2.5em;
   border-width: thin;
+  cursor: pointer;
 `;
 
 export const FormButtonSending = styled.button`
@@ -115,4 +118,40 @@ export const FormButtonSending = styled.button`
   min-height: 2.5em;
   border-width: thin;
   border-color: #cecfd0;
+`;
+
+export const PopUpOverlay = styled.div`
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  background: rgba(49,49,49,0.8);
+`;
+
+export const PopUpContainer = styled.div`
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+export const PopUpHeader = styled.h2`
+  font-size: 16px;
+  font-style: italic;
+`;
+
+export const PopUpText = styled.p`
+  font-size: 12px;
+`;
+
+export const PopUpButton = styled.button`
+  background-color: #fff;
+  margin-top: 2.5rem;
+  min-width: 24em;
+  min-height: 2.5em;
+  border-width: thin;
+  cursor: pointer;
 `;

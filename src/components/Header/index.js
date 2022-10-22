@@ -1,6 +1,7 @@
 import React from 'react';
 import { Nav, HeaderContainer, HeaderLogo } from './HeaderElements';
 
+// header component
 const Header = () => {
   return (
     <>

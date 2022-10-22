@@ -16,6 +16,7 @@ export const FooterWrapper = styled.div`
   margin: 0 auto;
 `;
 
-export const FooterDiv = styled.div`
+export const FooterText = styled.p`
+  font-size: 14px;
   font-style: italic;
 `;

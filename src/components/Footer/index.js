@@ -1,18 +1,19 @@
 import React from 'react';
-import { FooterContainer, FooterWrapper, FooterDiv } from './FooterElements';
+import { FooterContainer, FooterWrapper, FooterText } from './FooterElements';
 import { FaHeart } from 'react-icons/fa';
 
+// footer component
 const Footer = () => {
   return (
     <>
       <FooterContainer>
         <FooterWrapper>
-          <FooterDiv>
+          <FooterText>
             Made with <FaHeart size={12} /> in Melbourne
-          </FooterDiv>
-          <FooterDiv>
+          </FooterText>
+          <FooterText>
             &copy; 2022 Brocolli & Co. All Rights Reserved.
-          </FooterDiv>
+          </FooterText>
         </FooterWrapper>
       </FooterContainer>
     </>
