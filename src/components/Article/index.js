@@ -52,35 +52,6 @@ const Article = () => {
     }
   };
 
-  // validate the fields of the form
-  const validate = (values) => {
-    const errors = {};
-    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
-
-    // check fullname field
-    if (!values.fullName) {
-      errors.fullName = "Full name is required!"
-    } else if (values.fullName.length < 3) {
-      errors.fullName = "Full name needs to be at least 3 characters long!"
-    }
-
-    // check email field
-    if (!values.email) {
-      errors.email = "Email is required!"
-    } else if (!regex.test(values.email)) {
-      errors.email = "Email needs to be in a valid email format!"
-    }
-
-    // check confirm email field
-    if (!values.confirmEmail) {
-      errors.confirmEmail = "Confirm Email is required!"
-    } else if (values.email !== values.confirmEmail) {
-      errors.confirmEmail = "Confirm Email needs to match Email!"
-    }
-
-    return errors;
-  };
-
   // handle showing modal
   const [modal, setModal] = useState(false);
   const toggleModal = () => {
@@ -167,5 +138,34 @@ const Article = () => {
     </>
   )
 }
+
+// validate the fields of the form
+export const validate = (values) => {
+  const errors = {};
+  const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
+
+  // check fullname field
+  if (!values.fullName) {
+    errors.fullName = "Full name is required!"
+  } else if (values.fullName.length < 3) {
+    errors.fullName = "Full name needs to be at least 3 characters long!"
+  }
+
+  // check email field
+  if (!values.email) {
+    errors.email = "Email is required!"
+  } else if (!regex.test(values.email)) {
+    errors.email = "Email needs to be in a valid email format!"
+  }
+
+  // check confirm email field
+  if (!values.confirmEmail) {
+    errors.confirmEmail = "Confirm Email is required!"
+  } else if (values.email !== values.confirmEmail) {
+    errors.confirmEmail = "Confirm Email needs to match Email!"
+  }
+
+  return errors;
+};
 
 export default Article;
